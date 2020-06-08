@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Exchange rates api</h1>
+<table>
+    <tr>
+        <th>I have</th>
+        <th>I want</th>
+    </tr>
+    <tr>
+        <td><select style="width: 160px" name="" id="selectHave"></select></td>
+        <td><select style="width: 160px" name="" id="selectWant"></select></td>
+    </tr>
+    <tr>
+        <!--oninput="exchange()" kam -->
+        <td><input style="width: 150px" min="1" type="number" id="inputHave" value="1" onchange="exchangeHave()"></td>
+        <td><input style="width: 150px" min="1" type="number" id="inputWant" value="1" oninput="exchangeWant()"></td>
+    </tr>
+</table>
+<script src="Exchange.js"></script>
+</body>
+</html>
